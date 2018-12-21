@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Image Filter</title>
+    <style>
+        canvas {
+            border : black 1px solid;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <canvas id="contentCanvas" width="400" height="400"></canvas>
+    <input id="loadButton1" type="file" accept="image/*">
+
+    <canvas id="styleCanvas" width="400" height="400"></canvas>
+    <input id="loadButton2" type="file" accept="image/*">
+
+    <canvas id="combCanvas" width="400" height="400"></canvas>
+    <button id="filterButton">Stylized</button>
+</body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="filter.js"></script>
+</html>
